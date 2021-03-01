@@ -1,0 +1,155 @@
+.root {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+					"banner"
+					"breadcrumbs"
+					"article"
+					"foot";
+}
+
+.breadcrumbs {
+	font-size: 1.3rem;
+	font-family: "Gilroy";
+	color: rgb(196, 196, 196);
+	padding: 2rem 4rem;
+	grid-area: breadcrumbs;
+}
+
+.breadcrumbArrow {
+	color: #61bb71;
+	margin: 0 1rem;
+}
+
+.headingWrapper {
+	margin-bottom: 1.5rem;
+}
+
+.heading {
+	margin: 0;
+	padding: .5rem 0;
+	color: #071e29;
+	font-family: 'Gilroy';
+	font-weight: normal;
+	background-color: #daffce;
+	display: inline;
+	box-shadow: 1rem 0 0 #daffce, -1rem 0 0 #daffce;
+	line-height: 2.5rem;
+}
+
+.foot {
+	display: flex;
+	flex-direction: column;
+	grid-area: foot;
+	margin-bottom: 2rem;
+}
+
+.article {
+	grid-area: article;
+
+	& .content {
+		padding: 0 4rem 2rem 4rem;
+		
+		& p, & ul {
+			font-family: 'Gilroy';
+			font-weight: normal;
+		}
+
+		& ul {
+			list-style: none;
+			margin: 2rem 0;
+
+			& > li {
+				margin: 1rem 0;
+
+				&:before {
+					content: "O";
+					font-family: Arial, Helvetica, sans-serif;
+					font-weight: bold;
+					display: inline-block;
+					width: 1em;
+					margin-left: -1em;
+					color: #61bb71;
+				}
+			}
+		}
+	}
+}
+
+.aside {
+	display: none;
+	grid-area: aside;
+
+	& ul {
+		list-style: none;
+		margin: 2rem 0;
+
+		& > li {
+			margin: 1rem 0;
+
+			&:before {
+				content: "O";
+				font-family: Arial, Helvetica, sans-serif;
+				font-weight: bold;
+				display: inline-block;
+				width: 1em;
+				margin-left: -1em;
+				color: #61bb71;
+			}
+		}
+	}
+}
+
+@media(min-width: 740px) {
+	.foot {
+		//flex-direction: column;
+	}
+
+	.root {
+		grid-template-areas:
+					"banner banner"
+					"breadcrumbs breadcrumbs"
+					"article aside"
+					"foot foot";
+	}
+
+	.aside {
+		display: block;
+		padding: 0 3rem;
+		border-left: 1px #61bb71 solid;
+		
+		& ul {
+			padding: 0;
+			font-size: 1.2rem;
+			font-family: 'Gilroy';
+
+			& > li {
+				margin: 1.1rem 0;
+			}
+		}
+	}
+}
+
+@media(min-width: 1000px) {
+	.foot {
+		flex-direction: row;
+	}
+
+	.breadcrumbs {
+		padding: 2rem 10rem;
+	}
+
+	.article .content {
+		font-size: 1.2em;
+		padding: 1rem 10rem 2rem 10rem;
+	}
+
+	.aside {
+		padding-right: 7rem;
+
+		& ul li {
+			margin: 1.3rem 0;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.root {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+							"hero"
+							"community"
+							"developers"
+							"tokens"
+							"more-transactions"
+							"projects"
+							"get-involved";
+}
+
+@media(min-width: 740px) {
+	.root {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+							"hero hero"
+							"community community"
+							"developers developers"
+							"tokens tokens"
+							"more-transactions more-transactions"
+							"projects projects"
+							"get-involved get-involved";
+	}
+}
+
+@media(min-width: 1050px) {
+	.root {
+		grid-template-areas:
+							"hero hero"
+							"community developers"
+							"tokens more-transactions"
+							"projects projects"
+							"get-involved get-involved";
+	}
+}
