@@ -1,15 +1,14 @@
 import Navigation from '../components/navigation';
-import Hero from '../components/hero';
 import Community from '../components/community';
 import Developers from '../components/developers';
 import Tokens from '../components/tokens';
 import MoreTransactions from '../components/more-transactions';
-import ProjectsAndPartners from '../components/projects-and-partners';
 import GetInvolved from '../components/get-involved';
 import Footer from '../components/footer';
 
 import styles from '../styles/home.module.scss';
 import Head from '../components/head';
+import GroupBanner from '../components/group-banner';
 
 export default function Home()
 {
@@ -19,16 +18,17 @@ export default function Home()
 				<title>SLP Foundation</title>
 			</Head>
 			<Navigation />
-			<main className={styles.root}>
-				<Hero />
+			<main class="flex flex-col">
+				<GroupBanner/>
 				<Community />
 				<Developers />
 				<Tokens />
 				<MoreTransactions />
-				<ProjectsAndPartners />
+				
 				<GetInvolved />
 			</main>
 			<Footer />
 		</>
 	);
 }
+
