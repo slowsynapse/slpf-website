@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import Hero from './hero';
 import ProjectsAndPartners from './projects-and-partners';
 

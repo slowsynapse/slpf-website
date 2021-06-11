@@ -13,7 +13,7 @@ import GroupBanner from '../components/group-banner';
 export default function Home()
 {
 	return (
-		<>
+		<div class="max-w-7xl">
 			<Head>
 				<title>SLP Foundation</title>
 			</Head>
@@ -28,7 +28,6 @@ export default function Home()
 				<GetInvolved />
 			</main>
 			<Footer />
-		</>
+		</div>
 	);
 }
-

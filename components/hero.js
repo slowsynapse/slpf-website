@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 import styles from './scss/hero.module.scss';
 
@@ -16,7 +15,7 @@ export default function Hero()
 					<h2 className={styles.subtitle}>Learn more about SLP foundation&nbsp;&#10132;</h2>
 				</a>
 			</Link>
-			<Image src="/images/bitcoin-icon.svg" width={100} height={100}></Image>
+				<img src="/images/bitcoin-icon.svg" class="h-48"></img>
 		</div>
 
 	);
