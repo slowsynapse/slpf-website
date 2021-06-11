@@ -13,18 +13,17 @@ import GroupBanner from '../components/group-banner';
 export default function Home()
 {
 	return (
-		<div class="max-w-7xl">
+		<div className="">
 			<Head>
 				<title>SLP Foundation</title>
 			</Head>
 			<Navigation />
-			<main class="flex flex-col">
+			<main className="flex flex-col">
 				<GroupBanner/>
 				<Community />
 				<Developers />
 				<Tokens />
 				<MoreTransactions />
-				
 				<GetInvolved />
 			</main>
 			<Footer />

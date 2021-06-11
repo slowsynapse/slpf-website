@@ -31,7 +31,7 @@ export default function Navigation()
 	}, [open]);
 
 	return (
-		<nav className={styles.root}>
+		<nav className={`container mx-auto ${styles.root}`}>
 			<Link href="/" passHref>
 				<a title="SLP Foundation">
 					<img src="/images/logo-sample.png" className={styles.logo} />
@@ -41,35 +41,35 @@ export default function Navigation()
 			<ul className={clsx(styles.links, open && styles.linksOpen, visible && styles.linksVisible)}>
 				<li>
 					<Link href="/about" passHref>
-						<a title="About SLP">
-							About SLP <span className={styles.arrow}>&gt;</span>
+						<a title="SLP Foundation">
+							SLP Foundation<span className={styles.arrow}>&gt;</span>
 						</a>
 					</Link>
 				</li>
 				<li>
 					<Link href="/tokens" passHref>
-						<a title="SLP Tokens">
-							SLP Tokens <span className={styles.arrow}>&gt;</span>
+						<a title="SLP Tokens" class="uppercase">
+							SLP Tokens<span className={styles.arrow}>&gt;</span>
 						</a>
 					</Link>
 				</li>
 				<li>
-					<Link href="/developers" passHref>
-						<a title="Developer">
-							Developer <span className={styles.arrow}>&gt;</span>
+					<Link href="/projectntokens" passHref>
+						<a title="Project and Tokens">
+							Projects & tokens<span className={styles.arrow}>&gt;</span>
 						</a>
 					</Link>
 				</li>
 				<li>
-					<Link href="/community" passHref>
-						<a title="Community">
-							Community <span className={styles.arrow}>&gt;</span>
+					<Link href="/resources" passHref>
+						<a title="Resources">
+							Resources<span className={styles.arrow}>&gt;</span>
 						</a>
 					</Link>
 				</li>
 				<li className={styles.button}>
 					<a href="#" title="Make a donation">
-						Make a donation
+						Get started<span className={styles.arrow}>&gt;</span>
 					</a>
 				</li>
 			</ul>
