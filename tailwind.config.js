@@ -33,7 +33,11 @@ module.exports = {
       width: {
         '144': '36rem',
         '168': '42rem',
-      }
+      },
+      zIndex: {
+        '-10':'-10',
+        '-20':'-20',
+      },
     },
   },
   variants: {

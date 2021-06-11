@@ -8,7 +8,7 @@ export default function ProjectsAndPartners()
 	}
 
 	return (
-		<section class="flex justify-around w-full h-37_6 bg-white" >
+		<section class="flex justify-around w-full h-37_6 bg-white relative z-10" >
 				<Image src="/images/icons/coinflex-icon.svg" width={175} height={50}></Image>
 				<Image src="/images/icons/spice-icon.svg" width={175} height={50}></Image>
 				<Image src="/images/icons/sideshift-icon.svg" width={175} height={50}></Image>

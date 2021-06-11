@@ -18,17 +18,14 @@ export const TonContent = () => {
 export default function GroupBanner() {
   return (
     <>
-      <div class="bg-gradient-to-b from-groupBanner-primary to-groupBanner-secondary">
-        <div class="bg-gradient-to-l from-yellow-50 to-transparent ">
-          <GenericBanner
-            title={"A token economy backed by Proof of Work. We serve to promote and the Simple Ledger Protocol (SLP) on Bitcoin Cash."}
-            content={<TonContent />}
-            imageSize={"w-168"}
-            bannerHeight={"h-110"}
-          />
-          <ProjectsAndPartners />
-        </div>
-      </div>
+      <GenericBanner
+        title={
+          "A token economy backed by Proof of Work. We serve to promote and the Simple Ledger Protocol (SLP) on Bitcoin Cash."
+        }
+        content={<TonContent />}
+        imageRule={"w-168 -right-28 -top-28"}
+        bannerRule={"h-110 pt-16"}
+      />
     </>
   );
 }

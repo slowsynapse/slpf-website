@@ -1,6 +1,4 @@
-import { Container } from 'postcss';
 import React from 'react';
-
 
 const GenericBlockContent = ({
     label,
@@ -9,19 +7,18 @@ const GenericBlockContent = ({
     containerBlockClasses,
     labelClasses,
     descriptionClasses,
-    buttonGroupClasses
+    buttonGroupClasses,
+    tailwindRule="",
 }) => {
     return(
-        <div className="w-full">
+        <div className={tailwindRule}>
             <div className={containerBlockClasses}>
                 <h2 className={labelClasses}>{label}</h2>
                 <p className={descriptionClasses}>
                     {description}
                 </p>
                 <div className={buttonGroupClasses}>
-                    {
-                        buttonGroup
-                    }
+                    {buttonGroup}
                 </div>
             </div>
         </div>

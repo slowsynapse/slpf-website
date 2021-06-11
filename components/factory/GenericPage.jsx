@@ -5,22 +5,26 @@ import GenericList from './GenericList';
 import GenericBanner from './GenericBanner';
 
 const GenericPage = ({
+    titleBanner,
     genericPageContainerBreadcrumbClasses,
     gridContainerContentClasses,
     linkBreadCrumb,
     destination,
+    contentListSideBar,
     childContentPage,
     genericBlockContentWithData,
-    activateSideBar
+    activateSideBar,
+    isLink,
+    tailwindRule=""
 }) => {
     return(
-        <div className="">
+        <div className="z-10">
             <Navigation/>
             <div className="">
                 <GenericBanner
-                    title={"SLP FOUNDATION"}
-                    imageSize={"w-20"}
-                    bannerHeight={"h-32"}
+                    title={titleBanner}
+                    imageRule={"w-96 right-48 -bottom-48"}
+                    bannerRule={"h-32"}
                 />
                 <div className={`${genericPageContainerBreadcrumbClasses} pl-5 mt-16`}>
                     <Link href={linkBreadCrumb} passHref>
@@ -39,12 +43,12 @@ const GenericPage = ({
                     <h2 className="tracking-wide text-lg ml-2 text-gray-400 font-medium">{destination}</h2>
                 </div>
                 <div className={`grid grid-cols-6 ${gridContainerContentClasses} container mx-auto pl-5 mt-8`}>
-                    <div className={`col-start-1 col-span-5 ${activateSideBar ? "border-r-2 border-green-600" : ''}`}>
+                    <div className={`col-start-1 col-span-5 z-10 ${activateSideBar ? "border-r-2 border-green-600" : ''}`}>
                         {childContentPage}
                         {genericBlockContentWithData}
                     </div>
                     <div className="flex justify-end">
-                        <GenericList/>
+                        <GenericList contentListSideBar={contentListSideBar} isLink={isLink}/>
                     </div>
                 </div>
             </div>
