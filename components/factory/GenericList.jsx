@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 
-const GenericList = ({contentListSideBar, isLink}) => {
+const GenericList = ({contentListSideBar, isLink, tailwindRule="", contentListClasses="py-3 ml-4"}) => {
     return(
-        <ul className="z-10">
+        <ul className={`z-10 pl-8  ${tailwindRule}`}>
             {
                 contentListSideBar && contentListSideBar.map(content => {
                     return (
@@ -30,7 +30,7 @@ const GenericList = ({contentListSideBar, isLink}) => {
                                         </Link>
                                     </span>
                                 ) : (
-                                    <span className="py-3 ml-4">
+                                    <span className={contentListClasses}>
                                         {content.label}
                                     </span>
                                 )

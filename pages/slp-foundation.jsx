@@ -10,7 +10,7 @@ import Link from 'next/link';
 const LeadDeveloperLSContent = () => {
   return(
     <p className="mb-5">
-    <Link href="" passHref><a title="Link to Jt Blockparty Freeman page" className="underline text-green-400">Jt "Blockparty" Freeman</a></Link>
+    <Link href="" passHref><a title="Link to Jt Blockparty Freeman page" className="underline text-page-primary">Jt "Blockparty" Freeman</a></Link>
     , Lead Director. JT is the co-founder of
     fountainhead.cash developer services, SLP Foundation lead developer, and
     organizer of the SLP Virtual Hackathon.
@@ -22,21 +22,21 @@ const LeaderShipTeamContent = () => {
   return(
     <>
       <p className="mb-5">
-        <Link href="" passHref><a title="Link to Joey B. Wong page" className="underline text-green-400">Joey B. Wong</a></Link>, Director. Joey is an entrepreneur and the co-founder of Spice
+        <Link href="" passHref><a title="Link to Joey B. Wong page" className="underline text-page-primary">Joey B. Wong</a></Link>, Director. Joey is an entrepreneur and the co-founder of Spice
         Token, one of the most successful SLP projects. He has been in Bitcoin Cash
         since the beginning, and built businesses that focused on delivering health
         products. Before that he had a long career in film and television where he
         worked with reputable corporations such as the National Geographic Channel
       </p>
       <p className="mb-5">
-      <Link href="" passHref><a title="Link to Peter Ng page" className="underline text-green-400">Peter Ng.</a></Link> Director. Peter has been active in the crypto space for 8 years, crypto
+      <Link href="" passHref><a title="Link to Peter Ng page" className="underline text-page-primary">Peter Ng.</a></Link> Director. Peter has been active in the crypto space for 8 years, crypto
       veteran, is the founder of Blitz Network, a proprietary trading firm with a focus
       on OTC client servicing. He is also the founder of JD Mining, the first
       industrialised mining operation in the world that currently manages 300MW of
       hosting facilities, enough to power a quarter million mining rigs.
       </p>
       <p className="mb-5">
-        <Link href=""><a title="Link to Stefan Rust" className="underline text-green-400">Stefan Rust</a></Link>, Director. Stefan is the former CEO of Bitcoin.com and founder of
+        <Link href=""><a title="Link to Stefan Rust" className="underline text-page-primary">Stefan Rust</a></Link>, Director. Stefan is the former CEO of Bitcoin.com and founder of
         Sonic Ventures, an investment fund for social change. Stefan has more than 20
         years of experience as an investor, executive and senior manager. He serves as
         strategic adviser to Hypha Ltd., Cyclebit and Union Marketplace.
@@ -76,11 +76,11 @@ export const SlpFoundationContent = () => {
         <div className="mt-10">
           <h1 className=" my-5 text-4xl font-bold">Leadership team</h1>
             <Content
-              title={"Directors"}
+              title={"DIRECTORS"}
               content={<LeaderShipTeamContent/>}
             />
             <Content
-              title={"Lead Developer"}
+              title={"LEAD DEVELOPER"}
               content={<LeadDeveloperLSContent/>}
             />
         </div>
@@ -106,6 +106,7 @@ const SlpFoundation = () => {
           {label: "Get Started", href:'/'}
         ]}
         isLink={true}
+        tailwindRule="pl-10"
         genericBlockContentWithData={
           <GenericBlockContent
             containerBlockClasses={`flex-col w-2/5 ${styles.rootSecond}`}
@@ -121,8 +122,8 @@ const SlpFoundation = () => {
                 secondLabel={'EMAIL'}
                 linkOne={"/"}
                 linkTwo={"/"}
-                firstButtonClasses={'font-bold py-2 bg-green-600 focus:outline-none focus:bg-green-700 hover:bg-green-700'}
-                secondButtonClasses={'font-bold border-2 bg-white border-green-600 py-2 mt-3 focus:outline-none focus:border-green-700 hover:border-green-700'}
+                firstButtonClasses={'font-bold py-2 bg-page-primary focus:outline-none focus:bg-green-700 hover:bg-green-700'}
+                secondButtonClasses={'font-bold border-4 bg-white border-page-primary py-2 mt-3 focus:outline-none focus:border-green-700 hover:border-green-700'}
               />
             }
             buttonGroupClasses={"mt-2"}

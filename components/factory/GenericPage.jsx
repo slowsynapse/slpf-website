@@ -3,6 +3,7 @@ import Navigation from '../navigation';
 import Link from 'next/link';
 import GenericList from './GenericList';
 import GenericBanner from './GenericBanner';
+import Footer from '../../components/footer';
 
 const GenericPage = ({
     titleBanner,
@@ -20,7 +21,7 @@ const GenericPage = ({
     return(
         <div className="z-10">
             <Navigation/>
-            <div className="">
+            <div className="mb-10">
                 <GenericBanner
                     title={titleBanner}
                     imageRule={"w-96 right-48 -bottom-48"}
@@ -43,7 +44,7 @@ const GenericPage = ({
                     <h2 className="tracking-wide text-lg ml-2 text-gray-400 font-medium">{destination}</h2>
                 </div>
                 <div className={`grid grid-cols-6 ${gridContainerContentClasses} container mx-auto pl-5 mt-8`}>
-                    <div className={`col-start-1 col-span-5 z-10 ${activateSideBar ? "border-r-2 border-green-600" : ''}`}>
+                    <div className={`col-start-1 col-span-5 z-10 ${activateSideBar ? "border-r border-page-primary" : ''}`}>
                         {childContentPage}
                         {genericBlockContentWithData}
                     </div>
@@ -52,6 +53,7 @@ const GenericPage = ({
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }

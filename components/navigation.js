@@ -68,7 +68,7 @@ export default function Navigation() {
             </Link>
           </li>
           <li>
-            <Link href="/ressources-links" passHref>
+            <Link href="/resources-links" passHref>
               <a title="Resources">
                 Resources<span className={styles.arrow}>&gt;</span>
               </a>

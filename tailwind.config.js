@@ -15,6 +15,9 @@ module.exports = {
           primary: '#3b8a00',
           secondary: '#46b500',
         },
+        page: {
+          primary: '#61bb71',
+        }
       },
       fontFamily: {
         gilroy: {
