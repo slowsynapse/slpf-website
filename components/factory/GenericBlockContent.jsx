@@ -4,19 +4,19 @@ const GenericBlockContent = ({
     label,
     description,
     buttonGroup,
-    containerBlockClasses,
     labelClasses,
     descriptionClasses,
     buttonGroupClasses,
+    containerBlockClasses,
     tailwindRule="",
 }) => {
     return(
         <div className={tailwindRule}>
             <div className={containerBlockClasses}>
                 <h2 className={labelClasses}>{label}</h2>
-                <p className={descriptionClasses}>
+                <span className={`${descriptionClasses} my-6`}>
                     {description}
-                </p>
+                </span>
                 <div className={buttonGroupClasses}>
                     {buttonGroup}
                 </div>

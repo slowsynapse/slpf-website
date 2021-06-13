@@ -4,45 +4,38 @@ import Link from 'next/link';
 export default function Footer()
 {
 	return (
-		<footer className={styles.root}>
+		<footer className={`${styles.root} `}>
 			<ul className={styles.links}>
-				<li>
-					<Link href="/about" passHref>
+				<li className="font-gilroyLight">
+					<Link href="/slp-foundation" passHref>
 						<a title="About SLP">
-							About SLP&nbsp;&gt;
+							SLP FOUNDATION &nbsp;&gt;
 						</a>
 					</Link>
 				</li>
-				<li>
-					<Link href="/about" passHref>
+				<li className="font-gilroyLight">
+					<Link href="/slp-tokens" passHref>
 						<a title="SLP Token">
-							SLP Token&nbsp;&gt;
+							SLP Tokens &nbsp;&gt;
 						</a>
 					</Link>
 				</li>
-				<li>
-					<Link href="/about" passHref>
+				<li className="font-gilroyLight">
+					<Link href="/project-tokens" passHref>
 						<a title="Developer">
-							Developer&nbsp;&gt;
+							Projects & Tokens &nbsp;&gt;
 						</a>
 					</Link>
 				</li>
-				<li>
-					<Link href="/about" passHref>
+				<li className="font-gilroyLight">
+					<Link href="/ressources-links" passHref>
 						<a title="Community">
-							Community&nbsp;&gt;
-						</a>
-					</Link>
-				</li>
-				<li>
-					<Link href="/about" passHref>
-						<a title="Contact">
-							Contact&nbsp;&gt;
+							Resources &nbsp;&gt;
 						</a>
 					</Link>
 				</li>
 			</ul>
-			<div className={styles.copy}>SLP Foundation &copy; 2020 All rights reserved</div>
+			<div className={`${styles.copy} font-gilroyMedium`}>SLP Foundation &copy; 2021 All rights reserved</div>
 		</footer>
 	);
 }

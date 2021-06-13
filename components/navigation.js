@@ -27,8 +27,8 @@ export default function Navigation() {
   }, [open]);
 
   return (
-    <div className="relative z-10 bg-white">
-      <nav className={`container  mx-auto ${styles.root}`}>
+    <div className="md:relative z-20 bg-white w-full">
+      <nav className={`container z-20 max-w-screen-1440p mx-auto -pl-4 ${styles.root}`}>
         <Link href="/" passHref>
           <a title="SLP Foundation">
             <img src="/images/logo-sample.png" className={styles.logo} />
@@ -55,7 +55,7 @@ export default function Navigation() {
           </li>
           <li>
             <Link href="/slp-tokens" passHref>
-              <a title="SLP Tokens" class="uppercase">
+              <a title="SLP Tokens" className="uppercase">
                 SLP Tokens<span className={styles.arrow}>&gt;</span>
               </a>
             </Link>
@@ -75,7 +75,7 @@ export default function Navigation() {
             </Link>
           </li>
           <li className={styles.button}>
-            <a href="#" title="Get started">
+            <a href="/" title="Get started">
               Get started<span className={styles.arrow}>&gt;</span>
             </a>
           </li>

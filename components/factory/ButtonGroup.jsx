@@ -10,10 +10,10 @@ const ButtonGroup = ({
     linkOne="",
     linkTwo="",
     isShareIcon=false,
-    divContainerClasses="flex flex-col justify-center"
+    tailwindRule="",
 }) => {
     return(
-        <div className={divContainerClasses}>
+        <div className={`flex flex-col justify-center ${tailwindRule}`}>
             {
                 isShareIcon ? (
                     <Link href={linkOne} passHref>
