@@ -13,12 +13,13 @@ const HeroBanner = () => {
           label={"Learn  more  about  SLP  foundation"}
           linkOne={"/slp-foundation"}
           firstButtonClasses={
-            "max-w-max uppercase font-bold text-white md:text-xl border-b-4 font-gilroyRegular"
+            "max-w-max sm:align-center md:ml-20 lg:ml-0 uppercase font-bold text-white md:text-xl border-b-4 font-gilroyRegular"
           }
         />}
         imageRule={"w-168 -right-28 -top-28"}
         bannerRule={"h-110 pt-16"}
         tailwindRule={""}
+        titleClasses="sm:align-center md:pl-0 md:ml-20 lg:ml-0"
       />
     </>
   );

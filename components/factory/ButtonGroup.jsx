@@ -19,7 +19,7 @@ const ButtonGroup = ({
                     <Link href={linkOne} passHref>
                         <a className={`${firstButtonClasses} text-center flex`}>
                             {label}
-                            <svg className="ml-2" fill="#61bb71" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 310.002 310.002" xmlSpace="preserve" width="24px" height="24x">
+                            <svg className="ml-2" fill="#61bb71" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 310.002 310.002" xmlSpace="preserve" width="24px" height="24px">
                                 <g>
                                     <path d="M120.605,70.607l19.396-19.395v153.786c0,8.284,6.716,15,15,15c8.284,0,15-6.716,15-15V51.213l19.394,19.394
                                     c2.929,2.929,6.767,4.394,10.606,4.394c3.839,0,7.678-1.464,10.606-4.394c5.858-5.858,5.858-15.355,0-21.213L165.61,4.396

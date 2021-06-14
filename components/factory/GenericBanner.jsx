@@ -6,6 +6,7 @@ const GenericBanner = ({
   imageRule,
   bannerRule,
   tailwindRule= "",
+  titleClasses = ""
 }) => {
   return (
     <div className={tailwindRule}>
@@ -14,7 +15,7 @@ const GenericBanner = ({
           <div
             className={`flex flex-col justify-around container sm:max-w-screen-xsm md:max-w-screen-md xl:max-w-screen-1440p mx-auto max-h-64 md:max-h-full xsm:py-4 md:py-12 ${bannerRule}`}
           >
-            <h1 className="font-bold text-white md:text-4xl text-xl md:w-144 font-gilroyLight">
+            <h1 className={`font-bold text-white md:text-4xl text-xl md:w-144 font-gilroyLight ${titleClasses}`}>
               {title}
             </h1>
             {content}

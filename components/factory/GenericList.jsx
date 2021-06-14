@@ -10,7 +10,7 @@ const GenericList = ({contentListSideBar, isLink, tailwindRule="", contentListCl
                         <li  key={content} className="flex items-center font-gilroyMedium">
                             <div>
                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px"
-                                    y="0px" width="14px" height="14x" fill="#61bb71" viewBox="0 0 341.333 341.333" xmlSpace="preserve">
+                                    y="0px" width="14px" height="14px" fill="#61bb71" viewBox="0 0 341.333 341.333" xmlSpace="preserve">
                                     <g>
                                         <g>
                                             <path
