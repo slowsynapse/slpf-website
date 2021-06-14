@@ -28,7 +28,7 @@ export default function Footer()
 					</Link>
 				</li>
 				<li className="font-gilroyLight">
-					<Link href="/ressources-links" passHref>
+					<Link href="/resources-links" passHref>
 						<a title="Community">
 							Resources &nbsp;&gt;
 						</a>
