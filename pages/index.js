@@ -25,7 +25,7 @@ export default function Home() {
       <main className="flex flex-col">
         <GroupBanner />
         <ProjectsAndPartners />
-        <div className="mx-auto z-20">
+        <div className="mx-auto xl:max-w-screen-1440p z-20">
           <div className="md:grid md:grid-cols-2">
             <GenericBlockContent
               containerBlockClasses={`container md:p-10 xl:p-0 xl:pl-44 xl:py-10`}
