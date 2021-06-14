@@ -169,7 +169,7 @@ export default function Home() {
               </div>
             </div>
             <GenericBlockContent
-              containerBlockClasses={`flex-col md:p-10 xl:p-14 p-4 ${newStyles.rootThird}`}
+              containerBlockClasses={`flex-col md:p-10 xl:p-14 p-4 w-full ${newStyles.rootThird} md:h-imageHeight  xl:h-imageHeightXLScreen`}
               label={"Get involved"}
               labelClasses={
                 "bg-white font-bold text-page-primary text-4xl mb-5 px-1 block max-w-max mt-5 md:mt-0 ml-5 md:ml-0 font-gilroyBold"
@@ -181,7 +181,7 @@ export default function Home() {
 								various stakeholders can see their voices turn\
 								into action."
               }
-              tailwindRule="flex flex-col justify-center xl:pr-0 md:pr-24" 
+              tailwindRule="flex flex-col justify-center" 
               descriptionClasses={"mb-3 font-gilroyLight"}
               buttonGroup={
                 <ButtonGroup
