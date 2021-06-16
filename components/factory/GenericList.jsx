@@ -5,9 +5,9 @@ const GenericList = ({contentListSideBar, isLink, tailwindRule="", contentListCl
     return(
         <ul className={`z-10 pl-8  ${tailwindRule}`}>
             {
-                contentListSideBar && contentListSideBar.map(content => {
+                contentListSideBar && contentListSideBar.map((content, index) => {
                     return (
-                        <li  key={content} className="flex items-center font-gilroyMedium">
+                        <li  key={Math.random() * index} className="flex items-center font-gilroyMedium">
                             <div>
                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px"
                                     y="0px" width="14px" height="14px" fill="#61bb71" viewBox="0 0 341.333 341.333" xmlSpace="preserve">

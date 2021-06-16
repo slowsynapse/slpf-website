@@ -81,6 +81,7 @@ const ResourcesLinksContent = () => {
     for(let i = 0; i < 3; ++i) {
         containerBlockList.push(
             <BlockContent
+            key={Math.random()}
             labelTitle={contentList[i][0]}
             link={contentList[i][1]}
             revert={contentList[i][2]}
