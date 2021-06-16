@@ -32,8 +32,8 @@ const OrbContent = () => {
 const FlexContent = () => {
     return(
         <p className="font-gilroyMedium">
-            <Link href="" passHref><a title="Link to MintBot page" className="underline text-page-primary">Flex</a></Link> is an SLP token for gaining rewards that reduce their trading fees on the  &nbsp;
-            <Link href="" passHref><a title="Link to MintBot page" className="underline text-page-primary">CoinFlex Exchange</a></Link>.
+            <Link href="https://coinflex.com/fr/support/6-1-6-what-kind-of-token-is-flex-coin/" passHref><a target="_blank" title="Link to MintBot page" className="underline text-page-primary">Flex</a></Link> is an SLP token for gaining rewards that reduce their trading fees on the  &nbsp;
+            <Link href="https://coinflex.com/fr/" passHref><a target="_blank" title="Link to MintBot page" className="underline text-page-primary">CoinFlex Exchange</a></Link>.
         </p>
     );
 }
@@ -42,7 +42,7 @@ const FlexContent = () => {
 const MintContent = () => {
     return(
         <p className="font-gilroyMedium">
-            <Link href="" passHref><a title="Link to MintBot page" className="underline text-page-primary">MintBot</a></Link> is a tipping application that can be easily added to Telegram with no
+            <Link href="https://mintslp.com/" passHref><a target="_blank" title="Link to MintBot page" className="underline text-page-primary">MintBot</a></Link> is a tipping application that can be easily added to Telegram with no
             coding required. The Mint token allows users in a chat room to tip one another
             for their contributions.
         </p>
@@ -54,7 +54,7 @@ const SpiceContent = () => {
     return(
         <>
             <p className="mb-5 font-gilroyMedium">
-                <Link href="" passHref><a title="Link to Spice token page" className="underline text-page-primary">Spice Token</a></Link> is an appreciation token for the Bitcoin Cash blockchain, and
+                <Link href="https://spicetoken.org/" passHref><a target="_blank" title="Link to Spice token page" className="underline text-page-primary">Spice Token</a></Link> is an appreciation token for the Bitcoin Cash blockchain, and
                 serves as part of a generalized Social Tipping Platform. Spice works with
                 services such as SpiceFeed which captures all tipped content and aggregates
                 it into an overview of the hottest content happening across multiple social
@@ -76,7 +76,7 @@ const StablecoinContent = () => {
     return(
         <>
             <p className="font-gilroyMedium"> 
-                <Link href="" passHref><a title="Link to Thether page" className="underline text-page-primary">Thether (USDT)</a></Link> is the first and best-know stablecoin on the market. The Tether
+                <Link href="https://tether.to/" passHref><a target="_blank" title="Link to Thether page" className="underline text-page-primary">Thether (USDT)</a></Link> is the first and best-know stablecoin on the market. The Tether
                 team chose BCH for its stability, security, and low transaction fees.
             </p>
         </>
@@ -153,10 +153,10 @@ const ProjectTokens = () => {
         linkBreadCrumb={"/"}
         childContentPage={<ProjectTokensContent/>}
         contentListSideBar={[
-            {label: "About SLP", href:'/'},
-            {label: "SLP Tokens", href:'/'}, 
-            {label: "Project & Tokens", href:'/'}, 
-            {label: "Resources", href:'/'},
+            {label: "About SLP", href:'/slp-foundation'},
+            {label: "SLP Tokens", href:'/slp-tokens'}, 
+            {label: "Project & Tokens", href:'/project-tokens'}, 
+            {label: "Resources", href:'/resources-links'},
             {label: "Get Started", href:'/'}
         ]}
         isLink={true}
@@ -174,8 +174,8 @@ const ProjectTokens = () => {
               <ButtonGroup
                 label={'TELEGRAM'}
                 secondLabel={'EMAIL'}
-                linkOne={"/"}
-                linkTwo={"/"}
+                linkOne={"https://t.me/simpleledger"}
+                linkTwo={"mailto:support@slpfoundation.org"}
                 firstButtonClasses={'font-bold py-2 bg-page-primary focus:outline-none focus:bg-green-700 hover:bg-green-700'}
                 secondButtonClasses={'font-bold border-4 bg-white border-page-primary py-2 mt-3 focus:outline-none focus:border-green-700 hover:border-green-700'}
               />

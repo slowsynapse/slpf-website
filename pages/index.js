@@ -45,7 +45,8 @@ export default function Home() {
               buttonGroup={
                 <ButtonGroup
                   label={"MORE ABOUT SLP COMMUNITY"}
-                  linkOne={"/"}
+                  isExternalLink={false}
+                  linkOne={"/slp-foundation"}
                   firstButtonClasses={
                     "font-gilroyBold py-2 border-b-8 border-page-primary w-max"
                   }
@@ -71,7 +72,8 @@ export default function Home() {
               buttonGroup={
                 <ButtonGroup
                   label={"SEE RESOURCES & LINKS"}
-                  linkOne={"/"}
+                  isExternalLink={false}
+                  linkOne={"/resources-links"}
                   firstButtonClasses={
                     "font-gilroyBold py-2 border-b-8 border-page-primary w-max"
                   }
@@ -100,7 +102,8 @@ export default function Home() {
               buttonGroup={
                 <ButtonGroup
                   label={"LEARN  MORE  ABOUT  SLP  TOKEN"}
-                  linkOne={"/"}
+                  isExternalLink={false}
+                  linkOne={"/slp-tokens"}
                   firstButtonClasses={
                     "font-gilroyBold py-2 bg-page-primary focus:outline-none focus:bg-green-700 hover:bg-green-700"
                   }
@@ -135,7 +138,8 @@ export default function Home() {
               buttonGroup={
                 <ButtonGroup
                   label={"LEARN MORE ABOUT PROJECTS ON SLP"}
-                  linkOne={"/"}
+                  isExternalLink={false}
+                  linkOne={"/slp-tokens"}
                   firstButtonClasses={
                     "font-bold font-gilroyMedium py-2 border-b-8 border-page-primary w-max"
                   }
@@ -187,8 +191,8 @@ export default function Home() {
                 <ButtonGroup
                   label={"TELEGRAM"}
                   secondLabel={"EMAIL"}
-                  linkOne={"/"}
-                  linkTwo={"/"}
+                  linkOne={"https://t.me/simpleledger"}
+                  linkTwo={"mailto:support@slpfoundation.org"}
                   firstButtonClasses={
                     "font-bold py-2 bg-page-primary focus:outline-none focus:bg-green-700 hover:bg-green-700 font-gilroyBold"
                   }

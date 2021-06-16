@@ -22,7 +22,7 @@ const LeaderShipTeamContent = () => {
   return(
     <>
       <p className="mb-5 font-gilroyMedium">
-        <Link href="/" passHref><a title="Link to Joey B. Wong page" className="underline text-page-primary font-gilroyMedium">Joey B. Wong</a></Link>, Director. Joey is an entrepreneur and the co-founder of Spice
+        <Link href="https://www.linkedin.com/in/joey-b-wong-89725066/?originalSubdomain=hk" passHref><a title="Link to Joey B. Wong page" className="underline text-page-primary font-gilroyMedium">Joey B. Wong</a></Link>, Director. Joey is an entrepreneur and the co-founder of Spice
         Token, one of the most successful SLP projects. He has been in Bitcoin Cash
         since the beginning, and built businesses that focused on delivering health
         products. Before that he had a long career in film and television where he
@@ -100,10 +100,10 @@ const SlpFoundation = () => {
         linkBreadCrumb={"/"}
         childContentPage={<SlpFoundationContent/>}
         contentListSideBar={[
-          {label: "About SLP", href:'/'},
-          {label: "SLP Tokens", href:'/'}, 
-          {label: "Project & Tokens", href:'/'}, 
-          {label: "Resources", href:'/'},
+          {label: "About SLP", href:'/slp-foundation'},
+          {label: "SLP Tokens", href:'/slp-tokens'}, 
+          {label: "Project & Tokens", href:'/project-tokens'}, 
+          {label: "Resources", href:'/resources-links'},
           {label: "Get Started", href:'/'}
         ]}
         isLink={true}
@@ -121,8 +121,8 @@ const SlpFoundation = () => {
               <ButtonGroup
                 label={'TELEGRAM'}
                 secondLabel={'EMAIL'}
-                linkOne={"/"}
-                linkTwo={"/"}
+                linkOne={"https://t.me/simpleledger"}
+                linkTwo={"mailto:support@slpfoundation.org"}
                 firstButtonClasses={'font-bold py-2 bg-page-primary focus:outline-none focus:bg-green-700 hover:bg-green-700 font-gilroyMedium'}
                 secondButtonClasses={'font-bold border-4 bg-white border-page-primary py-2 mt-3 focus:outline-none focus:border-green-700 hover:border-green-700 font-gilroyMedium'}
               />

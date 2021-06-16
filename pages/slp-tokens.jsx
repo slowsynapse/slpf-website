@@ -39,9 +39,10 @@ export const SlpTokenContent = () => {
             </p>
             <div className="w-3/6 mb-10">
                 <ButtonGroup
+                    isExternalLink={false}
                     label={'GET STARTED'}
                     linkOne="/"
-                    linkeTwo="/"
+                    linkTwo="/resources-links"
                     secondLabel={'DEVELOPER RESOURCES'}
                     firstButtonClasses={'font-gilroyMedium font-bold p-2 bg-page-primary focus:outline-none focus:bg-green-700 hover:bg-green-700 min-w-max'}
                     secondButtonClasses={'font-gilroyMedium font-bold border-4 bg-white border-page-primary p-2 mt-3 focus:outline-none focus:border-green-700 hover:border-green-700 min-w-max'}
@@ -61,10 +62,10 @@ const SlpToken = () => {
         linkBreadCrumb={"/"}
         childContentPage={<SlpTokenContent/>}
         contentListSideBar={[
-          {label: "About SLP", href:'/'},
-          {label: "SLP Tokens", href:'/'}, 
-          {label: "Project & Tokens", href:'/'}, 
-          {label: "Resources", href:'/'},
+          {label: "About SLP", href:'/slp-foundation'},
+          {label: "SLP Tokens", href:'/slp-tokens'}, 
+          {label: "Project & Tokens", href:'/project-tokens'}, 
+          {label: "Resources", href:'/resources-links'},
           {label: "Get Started", href:'/'}
         ]}
         isLink={true}
@@ -79,8 +80,8 @@ const SlpToken = () => {
             descriptionClasses={"mb-3 font-gilroyLight"}
             buttonGroup={
               <ButtonGroup
-                linkOne="/"
-                linkTwo="/"
+                linkOne={"https://t.me/simpleledger"}
+                linkTwo={"mailto:support@slpfoundation.org"}
                 label={'TELEGRAM'}
                 secondLabel={'EMAIL'}
                 firstButtonClasses={'font-gilroyMedium font-bold py-2 bg-page-primary focus:outline-none focus:bg-green-700 hover:bg-green-700'}

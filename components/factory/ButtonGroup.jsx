@@ -11,13 +11,14 @@ const ButtonGroup = ({
     linkTwo="",
     isShareIcon=false,
     tailwindRule="",
+    isExternalLink=true
 }) => {
     return(
         <div className={`flex flex-col justify-center ${tailwindRule}`}>
             {
                 isShareIcon ? (
                     <Link href={linkOne} passHref>
-                        <a className={`${firstButtonClasses} text-center flex`}>
+                        <a target={isExternalLink ? "_blank" : "_self"} className={`${firstButtonClasses} text-center flex`}>
                             {label}
                             <svg className="ml-2" fill="#61bb71" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 310.002 310.002" xmlSpace="preserve" width="24px" height="24px">
                                 <g>
@@ -44,14 +45,14 @@ const ButtonGroup = ({
                     </Link>
                 ) : (
                     <Link href={linkOne} passHref>
-                        <a className={`${firstButtonClasses} text-center`}>{label}&nbsp;&#10132;</a>
+                        <a target={isExternalLink ? "_blank" : "_self"} className={`${firstButtonClasses} text-center`}>{label}&nbsp;&#10132;</a>
                     </Link>
                 )
             }
             {
                 secondLabel && (
                     <Link href={linkTwo} passHref>
-                        <a className={`${secondButtonClasses} text-center`}>{secondLabel}&nbsp;&#10132;</a>
+                        <a target={isExternalLink ? "_blank" : "_self"} className={`${secondButtonClasses} text-center`}>{secondLabel}&nbsp;&#10132;</a>
                     </Link>
                 )
             }

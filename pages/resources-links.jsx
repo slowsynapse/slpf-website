@@ -10,7 +10,7 @@ import Link from 'next/link';
 const WalletContent = () => {
     return(
         <p className="font-gilroyMedium">
-            <Link href="" passHref><a title="Link to Electron Cash SLP Edition page" className="underline text-page-primary font-gilroyMedium">Electron Cash SLP Edition</a></Link>, First you will want to download Electron Cash SLP
+            <Link href="https://electroncash.org/" passHref><a target="_blank" title="Link to Electron Cash SLP Edition page" className="underline text-page-primary font-gilroyMedium">Electron Cash SLP Edition</a></Link>, First you will want to download Electron Cash SLP
             Edition (opens new window)this is the reference wallet and very good for
             learning and developing as it has every SLP feature built into it.
         </p>
@@ -20,7 +20,7 @@ const WalletContent = () => {
 const ExchangeContent = () => {
     return(
         <p className="font-gilroyMedium">
-            <Link href="" passHref><a title="Link to X page" className="underline text-page-primary font-gilroyMedium">X</a></Link>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+            <Link href="#" passHref><a title="Link to X page" className="underline text-page-primary font-gilroyMedium">X</a></Link>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
             nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
             enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
         </p>
@@ -43,7 +43,8 @@ const BlockContent = ({
                 <ButtonGroup
                     label={'LEARN MORE'}
                     isShareIcon={true}
-                    linkOne={link[0]}
+                    isExternalLink={false}
+                    linkOne={link}
                     firstButtonClasses={'font-gilroyBold font-bold py-2 border-b-8 border-page-primary w-max ml-5 mb-5 md:ml-0 xl:ml-0 md:mb-0 xl:mb-0'}
                 />
                 }
@@ -58,7 +59,8 @@ const BlockContent = ({
                 <ButtonGroup
                     label={'LEARN MORE'}
                     isShareIcon={true}
-                    linkOne={link[1]}
+                    isExternalLink={false}
+                    linkOne={link}
                     firstButtonClasses={'font-gilroyBold font-bold py-2 border-b-8 border-page-primary w-max ml-5 mb-5 md:ml-0 xl:ml-0 md:mb-0 xl:mb-0'}
                 />
                 }
@@ -70,9 +72,9 @@ const BlockContent = ({
 
 const ResourcesLinksContent = () => {
     let contentList = [
-        [["Get Started", "Terminology"], "/",true],
-        [["Specification", "Guides"],"/", false],
-        [["Packages", "Tooling"], "/",true]
+        [["Get Started", "Terminology"], "#",true],
+        [["Specification", "Guides"],"#", false],
+        [["Packages", "Tooling"], "#",true]
     ]
 
     let containerBlockList = [];
@@ -92,9 +94,10 @@ const ResourcesLinksContent = () => {
                 {containerBlockList}
                 <div className="my-10">
                     <ButtonGroup
+                        isExternalLink={false}
                         isShareIcon={true}
                         label={'GO TO SLP.DEV WEBSITE'}
-                        linkOne={"/"}
+                        linkOne={"#"}
                         firstButtonClasses={'font-gilroyBold font-bold py-2 border-b-8 border-page-primary w-max'}
                     />
                 </div>
@@ -125,10 +128,10 @@ const ResourcesLinks = () => {
         linkBreadCrumb={"/"}
         childContentPage={<ResourcesLinksContent/>}
         contentListSideBar={[
-            {label: "About SLP", href:'/'},
-            {label: "SLP Tokens", href:'/'}, 
-            {label: "Project & Tokens", href:'/'}, 
-            {label: "Resources", href:'/'},
+            {label: "About SLP", href:'/slp-foundation'},
+            {label: "SLP Tokens", href:'/slp-tokens'}, 
+            {label: "Project & Tokens", href:'/project-tokens'}, 
+            {label: "Resources", href:'/resources-links'},
             {label: "Get Started", href:'/'}
         ]}
         isLink={true}
@@ -146,8 +149,8 @@ const ResourcesLinks = () => {
               <ButtonGroup
                 label={'TELEGRAM'}
                 secondLabel={'EMAIL'}
-                linkOne={"/"}
-                linkTwo={"/"}
+                linkOne={"https://t.me/simpleledger"}
+                linkTwo={"mailto:support@slpfoundation.org"}
                 firstButtonClasses={'font-gilroyMedium font-bold py-2 bg-page-primary focus:outline-none focus:bg-green-700 hover:bg-green-700'}
                 secondButtonClasses={'font-gilroyMedium font-bold border-4 bg-white border-page-primary py-2 mt-3 focus:outline-none focus:border-green-700 hover:border-green-700'}
               />

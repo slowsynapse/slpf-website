@@ -11,6 +11,7 @@ const HeroBanner = () => {
         }
         content={<ButtonGroup
           label={"Learn  more  about  SLP  foundation"}
+          isExternalLink={false}
           linkOne={"/slp-foundation"}
           firstButtonClasses={
             "max-w-max sm:align-center md:ml-20 lg:ml-0 uppercase font-bold text-white md:text-xl border-b-4 font-gilroyRegular"
